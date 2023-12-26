@@ -16,3 +16,34 @@ console.log(car1,car2)
 
 
 
+let mahindramotors = {
+    name:"Thar",
+    type:"Petrol",
+    Noofwheeels:4,
+    model:2021,
+    hill:"Yes"
+}
+
+let hyundaimotors= Object.create(mahindramotors)
+
+hyundaimotors.name="Venue";
+hyundaimotors.model=2021;
+hyundaimotors.type="petrol"
+hyundaimotors.Noofwheeels=4;
+hyundaimotors.hill="No";
+
+
+
+
+
+
+
+let suzukimotors= Object.create(hyundaimotors)
+suzukimotors.name="Baleno"
+suzukimotors.model=2022;
+suzukimotors.type="Diseal"
+suzukimotors.Noofwheeels=4;
+suzukimotors.hill="Yes";
+
+
+console.log(suzukimotors)
